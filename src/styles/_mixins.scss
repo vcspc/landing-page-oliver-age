@@ -32,5 +32,15 @@
 @mixin destaque ($tamanho) {
     font-size: $tamanho;
     color: $cor-texto-botao;
+    font-weight: 700;
     
+}
+
+@mixin botao ($largura, $altura, $tamanho, $espessura){
+    font-size: $tamanho;
+    color: $cor-texto-botao;
+    font-weight: $espessura;
+    height: $altura;
+    width: $largura;
+    border-radius: 5px;
 }
