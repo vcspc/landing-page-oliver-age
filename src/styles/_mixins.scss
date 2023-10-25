@@ -1,0 +1,36 @@
+@import 'variaveis';
+
+@mixin conatainer ($direcao, $tamanho){
+    display: flex;
+    flex-direction: $diracao;
+    justify-content: center;
+    align-items: center;
+    width: $tamanho;
+
+}
+
+@mixin titulo ($tamanho){
+    font-size: $tamanho;
+    color: $cor-texto-titulo;
+    font-weight: 700;
+
+}
+
+@mixin texto ($tamanho){
+    font-size: $tamanho;
+    color: $cor-texto-normal;
+    font-weight: 300;
+
+}
+
+@mixin item ($tamanho){
+    font-size: $tamanho;
+    color: $cor-texto-normal;
+    font-weight: 700;
+}
+
+@mixin destaque ($tamanho) {
+    font-size: $tamanho;
+    color: $cor-texto-botao;
+    
+}
