@@ -1,10 +1,10 @@
 @import 'variaveis';
 
-@mixin conatainer ($direcao, $tamanho){
+@mixin container ($direcao, $tamanho, $horizontal, $vertical){
     display: flex;
-    flex-direction: $diracao;
-    justify-content: center;
-    align-items: center;
+    flex-direction: $direcao;
+    justify-content: $horizontal;
+    align-items: $vertical;
     width: $tamanho;
 
 }
