@@ -14,7 +14,8 @@ export default function Cabecalho(){
                     className={styles.logo} 
                     src={logo}  
                     alt="Logo"
-                    
+                    fill
+                    objectFit="contain"
                     />
                 </div>
                 <p className={styles.texto}>Olive Age: Para alívio da pressão do dia a dia.</p>
