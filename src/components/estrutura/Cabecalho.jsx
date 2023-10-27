@@ -20,8 +20,24 @@ export default function Cabecalho(){
                 </div>
                 <p className={styles.texto}>Olive Age: Para alívio da pressão do dia a dia.</p>
             </div>
-            <Image className={styles.produtos} src={produtos} alt="Imagem com recipientes de cápsula e frasco de liquido" />
-            <Image className={styles.idosos} src={idosos} alt="Homem e mulher de terceira idade com sorriso no rosto se abraçando" />
+            <div className={styles.produtos1}>
+            <Image 
+            className={styles.produtos} 
+            src={produtos} 
+            alt="Imagem com recipientes de cápsula e frasco de liquido" 
+            fill
+            objectFit="contain"
+            />
+            </div>
+            <div className={styles.idosos1}>
+            <Image 
+            className={styles.idosos} 
+            src={idosos} 
+            alt="Homem e mulher de terceira idade com sorriso no rosto se abraçando" 
+            fill
+            objectFit="contain"
+            />
+            </div>
         </div>
     )
 }

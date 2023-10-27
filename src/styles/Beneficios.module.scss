@@ -1,0 +1,40 @@
+@import 'variaveis';
+@import 'mixins';
+
+.fundo{
+    @include container(column, 100%, center, flex-start);
+    background-color: $cor-fundo;
+    margin-left: 2rem;
+
+    .destaque {
+        @include destaque($fonte-GG);
+        width: 70%;
+        text-align: center;
+        align-self: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 5rem;
+        margin-top: 10rem;
+    }
+
+    .item {
+        @include item($fonte-GG);
+        margin-top: 1rem;
+        cursor: pointer;
+        
+    }
+
+    .descricao {
+        @include texto($fonte-G + 0.2rem);
+        width: 70%;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .botao {
+        @include botao(17rem, 6rem, $fonte-G, $espessura-Bold);
+        align-self: center;
+        margin-top: 5rem;
+    }
+
+}

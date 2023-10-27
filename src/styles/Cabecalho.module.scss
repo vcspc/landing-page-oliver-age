@@ -9,14 +9,39 @@
 
     .container {
         @include container(column, 50%, space-between, flex-start);
-        height: 10rem;
+        height: 17rem;
         align-self: flex-start;
+        margin-left: 2rem;
 
         .logo1 {
-            width: 1rem;
-            height: auto;
+            width: 90%;
+            height: 10rem;
+            position: relative;
+        }
+
+        .texto {
+            @include titulo ($fonte-GX, $espessura-Regular);
+            
         }
     
+    }
+
+    .produtos1{
+        width: 30rem;
+        height: 20rem;
+        position: absolute;
+        left: 20rem;
+        top: 20rem;
+        z-index: 2;
+    }
+
+    .idosos1 {
+        width: 45%;
+        height: 35rem;
+        position: relative;
+        z-index: 1;
+        //align-self: flex-end;
+        //justify-self: flex-end;
     }
 
 }

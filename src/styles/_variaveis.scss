@@ -5,7 +5,6 @@
 
 $cor-texto-normal: #000;
 $cor-texto-titulo: #4C5A28;
-$cor-texto-destaque: #A6823E;
 $cor-texto-botao: #fff;
 $cor-texto-preco: #4C5A28;
 $cor-texto-quadrado: #fff;
@@ -20,20 +19,30 @@ $cor-fundo-quadrado2: #A19F74;
 $cor-fundo-quadrado3: #CBCAB2;
 $cor-fundo-quadrado4: #C5C4AC;
 $cor-fundo-botao: #4C5A28;
+$cor-fundo-destaque: #A6823E;
 
 //Tamanhosda de Fonte
 
-$fonte-PP: 1rem;
-$fonte-PP: 2rem;
-$fonte-M: 3rem;
-$fonte-G: 4rem;
-$fonte-GX: 5rem;
+$fonte-PP: 0.2rem;
+$fonte-P: 0.5rem;
+$fonte-M: 1rem;
+$fonte-G: 1.5rem;
+$fonte-GG: 2rem;
+$fonte-GX: 2.5rem;
 
 //Espaçamento
 
 $espacamento-P: 3rem;
 $espacamento-M: 5rem;
 $espacamento-G: 7rem;
+
+//Espessura da Fonte
+
+$espessura-Light: 300;
+$espessura-Regular: 400;
+$espessura-Bold: 700;
+$espessura-Black: 900;
+
 
 //Fonte Estilo
 

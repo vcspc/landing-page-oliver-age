@@ -1,0 +1,35 @@
+@import 'variaveis';
+@import 'mixins';
+
+.fundo {
+    @include container(row, 100%, space-between, center);
+    background-color: $cor-fundo;
+    margin-top: 10rem;
+    background: radial-gradient(70% 230% at 80% 55.6%, rgba(166, 130, 62, 0.78) 0%, rgba(166, 130, 62, 0.00) 25.52%), #F8F8F8;
+
+    .container {
+        @include container(column, 60%, space-between, center);
+        height: 22rem;
+        margin-left: 1rem;
+        
+        
+        .titulo {
+            @include titulo($fonte-GX, $espessura-Bold);
+            text-align: center;
+        }
+
+        .texto {
+            @include texto($fonte-GG);
+            text-align: center;
+        }
+
+    }
+
+    .oliva {
+        width: 40%;
+        height: 30rem;
+        position: relative;
+        
+        
+    }
+}

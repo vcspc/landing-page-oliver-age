@@ -9,10 +9,11 @@
 
 }
 
-@mixin titulo ($tamanho){
+@mixin titulo ($tamanho, $espessura){
     font-size: $tamanho;
     color: $cor-texto-titulo;
-    font-weight: 700;
+    font-weight: $espessura;
+    font-family: $fonte-principal;
 
 }
 
@@ -20,6 +21,7 @@
     font-size: $tamanho;
     color: $cor-texto-normal;
     font-weight: 300;
+    font-family: $fonte-principal;
 
 }
 
@@ -27,20 +29,25 @@
     font-size: $tamanho;
     color: $cor-texto-normal;
     font-weight: 700;
+    font-family: $fonte-principal;
 }
 
 @mixin destaque ($tamanho) {
     font-size: $tamanho;
     color: $cor-texto-botao;
     font-weight: 700;
+    font-family: $fonte-principal;
+    background-color: $cor-fundo-destaque;
     
 }
 
 @mixin botao ($largura, $altura, $tamanho, $espessura){
     font-size: $tamanho;
     color: $cor-texto-botao;
+    background-color: $cor-fundo-botao;
     font-weight: $espessura;
     height: $altura;
     width: $largura;
     border-radius: 5px;
+    font-family: $fonte-principal;
 }
