@@ -1,0 +1,33 @@
+@import 'variaveis';
+@import 'mixins';
+
+.fundo {
+    @include container(column, 100%, space-around, center);
+    background-color: $cor-fundo;
+    height: 40rem;
+
+    .titulo {
+        @include titulo($fonte-GX + 1rem, $espessura-Bold);
+        text-align: center;
+        text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.10), 0px 14px 14px rgba(0, 0, 0, 0.09), 0px 32px 19px rgba(0, 0, 0, 0.05), 0px 58px 23px rgba(0, 0, 0, 0.01), 0px 90px 25px rgba(0, 0, 0, 0.00);
+    
+    }
+}
+
+@media (max-width: 413px) {
+
+    .fundo {
+        @include container(column, 100%, space-around, center);
+        background-color: $cor-fundo;
+        height: 15rem;
+    
+        .titulo {
+            @include titulo($fonte-G - 0.1rem, $espessura-Bold);
+            text-align: center;
+            text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.10), 0px 14px 14px rgba(0, 0, 0, 0.09), 0px 32px 19px rgba(0, 0, 0, 0.05), 0px 58px 23px rgba(0, 0, 0, 0.01), 0px 90px 25px rgba(0, 0, 0, 0.00);
+            width: 90%;
+
+        }
+    }
+
+}

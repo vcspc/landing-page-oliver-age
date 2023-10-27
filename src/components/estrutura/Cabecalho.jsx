@@ -16,6 +16,7 @@ export default function Cabecalho(){
                     alt="Logo"
                     fill
                     objectFit="contain"
+                    unoptimized
                     />
                 </div>
                 <p className={styles.texto}>Olive Age: Para alívio da pressão do dia a dia.</p>
@@ -27,6 +28,7 @@ export default function Cabecalho(){
             alt="Imagem com recipientes de cápsula e frasco de liquido" 
             fill
             objectFit="contain"
+            unoptimized
             />
             </div>
             <div className={styles.idosos1}>
@@ -36,6 +38,7 @@ export default function Cabecalho(){
             alt="Homem e mulher de terceira idade com sorriso no rosto se abraçando" 
             fill
             objectFit="contain"
+            unoptimized
             />
             </div>
         </div>

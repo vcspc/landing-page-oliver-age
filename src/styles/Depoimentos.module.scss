@@ -13,3 +13,20 @@
         margin-bottom: 7rem;
     }
 }
+
+@media (max-width: 413px) {
+
+    .fundo {
+        @include container(column, 100%, center, center);
+        background-color: $cor-fundo;
+        margin-bottom: 2rem;
+    
+        .titulo {
+            @include titulo($fonte-M, $espessura-Bold);
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+}

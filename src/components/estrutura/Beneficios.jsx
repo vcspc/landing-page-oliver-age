@@ -2,6 +2,13 @@
 import Item from '../Item';
 import style from '../../styles/Beneficios.module.scss';
 
+function handleClick() {
+    window.location.href = 'https://www.folhasdeoliva.com.br/linha-oliveage/';
+  }
+  
+
+  
+
 
 export default function Beneficios(){
 
@@ -17,7 +24,7 @@ export default function Beneficios(){
             <Item  item={'Saude Proteção das células beta pancreáticas'} descricao={'As células beta do pâncreas são responsáveis pela produção de insulina. Estes ativos podem ter efeitos protetores sobre essas células, ajudando a preservar sua função e reduzindo o risco de declínio da produção de insulina.'}/>
             <Item  item={'Saude Estímulo dos osteoblastos'} descricao={'Estes ativos podem promover a diferenciação e a atividade dos osteoblastos, contribuindo para a formação de osso novo.'}/>
             <Item  item={'Saude Neuroproteção'} descricao={'Auxiliam na sobrevivência das células neurais e na melhoria da memória e concentração.'}/>
-            <button className={style.botao}>Saiba Mais</button>
+            <button onClick={handleClick} className={style.botao}>Saiba Mais</button>
             {/* <div className={style.botao}>
                 <Botao url={'https://www.google.com/'} width={'17rem'} height={'6rem'} fontSize={'2rem'} text={'Saiba Mais'}/>
             </div> */}

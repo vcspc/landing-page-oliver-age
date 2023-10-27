@@ -16,6 +16,7 @@ export default function Conceito(){
                 alt="Imagem de um galho de oliveira com fruto"
                 fill
                 objectFit="contain"
+                unoptimized
                 />
             </div>
         </div>

@@ -24,3 +24,31 @@
         border: none;
     }
 }
+
+@media (max-width: 413px) {
+
+    .container {
+        @include container(row, 100%, space-around, center);
+    
+        .anterior {
+            @include botao(1rem, 1rem, 0.5rem, $espessura-Regular);
+            color: $cor-texto-normal;
+            background-color: rgb(206, 213, 215);
+            border: none;
+        }
+    
+        .video {
+            width: 15rem;
+            //border: 1px solid #C5C4AC;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 5px 5px 0px rgba(0, 0, 0, 0.13), 0px 11px 7px 0px rgba(0, 0, 0, 0.08), 0px 19px 8px 0px rgba(0, 0, 0, 0.02), 0px 30px 9px 0px rgba(0, 0, 0, 0.00);
+        }
+    
+        .proximo {
+            @include botao(1rem, 1rem, 0.5rem, $espessura-Regular);
+            color: $cor-texto-normal;
+            background-color: rgb(206, 213, 215);
+            border: none;
+        }
+    }
+
+}

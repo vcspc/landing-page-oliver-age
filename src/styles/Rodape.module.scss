@@ -1,0 +1,54 @@
+@import 'variaveis';
+@import 'mixins';
+
+.fundo {
+    @include container(row, 100%, space-around, center);
+    background-color: $cor-fundo-cabecalho;
+    height: 6rem;
+
+    .container {
+        @include container(column, 30%, space-around, center);
+        height: 5rem;
+
+        .contato {
+            @include container(row, 10.5rem, center, center);
+
+            img {
+                width: 1.5rem;
+            }
+
+            p {
+                @include texto($fonte-M);
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 413px) {
+
+    .fundo {
+        @include container(row, 100%, space-around, center);
+        background-color: $cor-fundo-cabecalho;
+        height: 4rem;
+    
+        .container {
+            @include container(column, 30%, space-around, center);
+            height: 2.5rem;
+    
+            .contato {
+                @include container(row, 7rem, center, center);
+    
+                img {
+                    width: 1rem;
+                }
+    
+                p {
+                    @include texto($fonte-P - 0.1rem);
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+}

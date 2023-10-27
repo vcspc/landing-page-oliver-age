@@ -45,3 +45,51 @@
     }
 
 }
+
+@media (max-width: 413px) {
+
+    .fundo {
+        @include container(row, 100%, space-between, center);
+        background-color: $cor-fundo-cabecalho;
+    
+        .container {
+            @include container(column, 50%, space-between, flex-start);
+            height: 7rem;
+            align-self: flex-start;
+            margin-left: 1rem;
+    
+            .logo1 {
+                width: 90%;
+                height: 4rem;
+                position: relative;
+            }
+    
+            .texto {
+                @include titulo ($fonte-M, $espessura-Regular);
+                
+            }
+        
+        }
+    
+        .produtos1{
+            width: 12rem;
+            height: 7rem;
+            position: absolute;
+            left: 6rem;
+            top: 7rem;
+            z-index: 2;
+        }
+    
+        .idosos1 {
+            width: 45%;
+            height: 11.5rem;
+            position: relative;
+            z-index: 1;
+            align-self: flex-start;
+            //align-self: flex-end;
+            //justify-self: flex-end;
+        }
+    
+    }
+
+}

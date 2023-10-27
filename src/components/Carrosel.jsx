@@ -18,7 +18,7 @@ export default function Carrosel({ videoNames }){
     return (
         <div className={style.container}>
             <button className={style.anterior} onClick={handlePrev}>{anterior}</button>
-            <video className={style.video} src={`/${videoNames[currentIndex]}`} controls width="500" height="300" />
+            <video className={style.video} src={`/${videoNames[currentIndex]}`} controls width="250" height="150" />
             <button className={style.proximo} onClick={handleNext}>{proximo}</button>
         </div>
     )

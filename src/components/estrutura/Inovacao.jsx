@@ -18,12 +18,12 @@ export default function Inovacao(){
                     <div className={style.Q2}>
                         <p className={style.titulo}>Origem Confiável</p>
                         <p className={style.texto}>Produzido a partir de oliveiras de cultivo próprio, sem contaminantes e agrotóxicos.</p>
-                        <Image src={origemConfiavel} fill objectFit="contain" />
+                        <Image src={origemConfiavel} fill objectFit="contain" alt="My Image" unoptimized />
                     </div>
                     <div className={style.Q3}>
                         <p className={style.titulo}>Padrão de Qualidade</p>
                         <p className={style.texto}>Cada lote é submetido a rigorosos controles de qualidade, assegurando os mais altos padrões de segurança, pureza e eficácia.</p>
-                        <Image src={padraoDeQualidade} fill objectFit="contain" />
+                        <Image src={padraoDeQualidade} fill objectFit="contain" alt="My Image" unoptimized />
                     </div>
                     <div className={style.Q4}>
                         <p className={style.titulo}>Teores Garantidos</p>
@@ -39,12 +39,12 @@ export default function Inovacao(){
                     <div className={style.Q6}>
                         <p className={style.titulo}>Integridade Nutricional</p>
                         <p className={style.texto}>Processamento com técnicas avançadas, para preservar a integridade dos compostos bioativos da oliveira, garantindo a máxima eficácia dos produtos.</p>
-                        <Image src={integridadeNutricional} fill objectFit="contain" />
+                        <Image src={integridadeNutricional} fill objectFit="contain" alt="My Image" unoptimized />
                     </div>
                     <div className={style.Q7}>
                         <p className={style.titulo}>Assistência Especializada</p>
                         <p className={style.texto}>Equipe com profissionais prontos para fornecer orientações personalizadas sobre o uso adequado do suplemento e seus benefícios.</p>
-                        <Image src={assistenciaEspecializada} fill objectFit="contain" />
+                        <Image src={assistenciaEspecializada} fill objectFit="contain" alt="My Image" unoptimized />
                     </div>
                     <div className={style.Q8}>
                         <p className={style.titulo}>Histórico de Excelência</p>

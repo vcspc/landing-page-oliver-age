@@ -38,3 +38,45 @@
     }
 
 }
+
+@media (max-width: 413px) {
+
+    .fundo{
+        @include container(column, 100%, center, flex-start);
+        background-color: $cor-fundo;
+        margin-left: 0.5rem;
+    
+        .destaque {
+            @include destaque($fonte-P + 0.1rem);
+            width: 70%;
+            text-align: center;
+            align-self: center;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+    
+        .item {
+            @include item($fonte-M - 0.2rem);
+            margin-top: 0.1rem;
+            cursor: pointer;
+            
+        }
+    
+        .descricao {
+            @include texto($fonte-P + 0.2rem);
+            width: 70%;
+            margin-left: 0.6rem;
+            margin-top: 0.2rem;
+        }
+    
+        .botao {
+            @include botao(10rem, 3rem, $fonte-M - 0.1rem, $espessura-Bold);
+            align-self: center;
+            margin-top: 2rem;
+        }
+    
+    }
+
+}
