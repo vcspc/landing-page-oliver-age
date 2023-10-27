@@ -1,0 +1,15 @@
+@import 'variaveis';
+@import 'mixins';
+
+.fundo {
+    @include container(column, 100%, center, center);
+    background-color: $cor-fundo;
+    margin-bottom: 10rem;
+
+    .titulo {
+        @include titulo($fonte-GG, $espessura-Bold);
+        text-align: center;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+}
