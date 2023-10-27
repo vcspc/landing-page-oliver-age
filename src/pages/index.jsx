@@ -3,6 +3,7 @@ import Conceito from '../components/estrutura/Conceito';
 import Beneficios from '../components/estrutura/Beneficios';
 import Inovacao from '@/components/estrutura/Inovacao';
 import Depoimentos from '@/components/estrutura/Depoimentos';
+import Produtos from '@/components/estrutura/Produtos';
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Beneficios />
       <Inovacao />
       <Depoimentos />
+      <Produtos />
     </>
   )
 }

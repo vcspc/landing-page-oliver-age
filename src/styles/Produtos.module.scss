@@ -1,0 +1,78 @@
+@import 'variaveis';
+@import 'mixins';
+
+.fundo {
+    @include container(column, 100%, space-around, center);
+    background-color: $cor-fundo;
+    height: 90rem;
+
+    .titulo {
+        @include titulo($fonte-GX + 1rem, $espessura-Bold);
+        text-align: center;
+        text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.10), 0px 14px 14px rgba(0, 0, 0, 0.09), 0px 32px 19px rgba(0, 0, 0, 0.05), 0px 58px 23px rgba(0, 0, 0, 0.01), 0px 90px 25px rgba(0, 0, 0, 0.00);
+    
+    }
+
+    .produto {
+        @include container(row, 100%, center, center);
+        
+
+        .imagem {
+            position: relative;
+            width: 20rem;
+            height: 20rem;
+            
+        }
+
+        .container {
+            @include container(column, 20rem, space-between, center);
+
+            .descricao {
+                @include titulo($fonte-M + 0.3rem, $espessura-Bold);
+                text-align: center;
+                color: $cor-texto-normal;
+
+            }
+
+            .preco {
+                @include container(row, 20rem, center, center);
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+
+                .cifrao {
+                    @include texto($fonte-M + 0.3rem);
+                    color: $cor-texto-titulo;
+
+                    .por {
+                        font-weight: $espessura-Light;
+
+                    }
+
+                    .rs {
+                        font-weight: $espessura-Regular;
+                    }
+                }
+
+                .valor {
+                    @include titulo($fonte-GX + 1rem, $espessura-Black);
+                    
+
+                }
+
+                .centavos {
+                    @include texto($fonte-M + 0.3rem);
+                    color: $cor-texto-titulo;
+                    align-self: flex-start;
+                    margin-top: 0.4rem;
+                    font-weight: $espessura-Regular;
+                }
+                
+            }
+
+            .botao {
+                @include botao(10rem, 3rem, 1rem, $espessura-Regular);
+                border-radius: 15px;
+            }
+        }
+    }
+}
