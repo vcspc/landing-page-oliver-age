@@ -5,5 +5,12 @@ const nextConfig = {
   reactStrictMode: true,
 
 }
+/* 
+module.exports = {
+  images: {
+    loader: 'default',
+    path: '',
+  },
+} */
 
 module.exports = nextConfig

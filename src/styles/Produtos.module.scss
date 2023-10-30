@@ -20,7 +20,12 @@
         .imagem {
             position: relative;
             width: 20rem;
-            height: 20rem;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
             
         }
 
@@ -98,7 +103,12 @@
             .imagem {
                 position: relative;
                 width: 11rem;
-                height: 13rem;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
                 
             }
     

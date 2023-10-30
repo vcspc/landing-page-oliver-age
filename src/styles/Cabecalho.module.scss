@@ -17,6 +17,11 @@
             width: 90%;
             height: 10rem;
             position: relative;
+
+            background-image: url('/logo.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }
 
         .texto {
@@ -33,6 +38,11 @@
         left: 20rem;
         top: 20rem;
         z-index: 2;
+
+        background-image: url('/produtos.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
     .idosos1 {
@@ -40,6 +50,10 @@
         height: 35rem;
         position: relative;
         z-index: 1;
+        background-image: url('/idosos.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
         //align-self: flex-end;
         //justify-self: flex-end;
     }
@@ -62,6 +76,11 @@
                 width: 90%;
                 height: 4rem;
                 position: relative;
+
+                background-image: url('/logo.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
             }
     
             .texto {

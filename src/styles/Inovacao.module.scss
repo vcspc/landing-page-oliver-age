@@ -46,6 +46,10 @@
                 @include container(column, 16rem, none, center);
                 height: 16rem;
                 position: relative;
+                background-image: url('/origemConfiavel.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
 
                 .titulo {
                     @include titulo($fonte-G - 0.1rem, $espessura-Bold);
@@ -70,6 +74,11 @@
                 @include container(column, 16rem, none, center);
                 height: 16rem;
                 position: relative;
+
+                background-image: url('/padraoDeQualidade.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
 
                 .titulo {
                     @include titulo($fonte-G - 0.1rem, $espessura-Bold);
@@ -146,6 +155,11 @@
                 height: 16rem;
                 position: relative;
 
+                background-image: url('/integridadeNutricional.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+
                 .titulo {
                     @include titulo($fonte-G - 0.1rem, $espessura-Bold);
                     color: $cor-texto-botao;
@@ -169,6 +183,12 @@
                 @include container(column, 16rem, none, center);
                 height: 16rem;
                 position: relative;
+
+                background-image: url('/assistenciaEspecializada.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                
 
                 .titulo {
                     @include titulo($fonte-G - 0.1rem, $espessura-Bold);
