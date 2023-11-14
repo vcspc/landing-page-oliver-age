@@ -60,7 +60,7 @@
 
 }
 
-@media (max-width: 413px) {
+@media (max-width: $celular) {
 
     .fundo {
         @include container(row, 100%, space-between, center);

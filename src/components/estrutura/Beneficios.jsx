@@ -15,7 +15,7 @@ export default function Beneficios(){
 
     return (
         <div className={style.fundo}>
-            <p className={style.destaque}>Estudos apontam que os efeitos antioxidantes, anti-inflamatórios e regulatórios encontrados nestes bioativos naturais, oferecem um leque amplo de aplicações potenciais, entre eles:</p>
+            <p className={style.destaque}><span>Estudos apontam que os efeitos antioxidantes, anti-inflamatórios e regulatórios encontrados nestes bioativos naturais, oferecem um leque amplo de aplicações potenciais, entre eles:</span></p>
             <Item  item={'Saude Cardiovascular'} descricao={'Auxilia na saúde do coração, melhorando a função vascular e regulando a pressão arterial.'}/>
             <Item  item={'Saude Antienvelhecimento'} descricao={'Auxilia na Contribui para a proteção das células contra o envelhecimento precoce, mantendo a vitalidade da pele e dos órgãos.'}/>
             <Item  item={'Saude Suporte ao Sistema Imunológico'} descricao={'Auxilia na saúde do coração, Reforça as defesas naturais do corpo, promovendo um sistema imunológico forte e resiliente.'}/>

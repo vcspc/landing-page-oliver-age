@@ -16,10 +16,17 @@ export default function Carrosel({ videoNames }){
     const proximo = ">";
     
     return (
-        <div className={style.container}>
-            <button className={style.anterior} onClick={handlePrev}>{anterior}</button>
-            <video className={style.video} src={`/${videoNames[currentIndex]}`} controls width="250" height="150" />
-            <button className={style.proximo} onClick={handleNext}>{proximo}</button>
-        </div>
+        <>
+            <div className={style.container}>
+                <button className={style.anterior} onClick={handlePrev}>{anterior}</button>
+                <video className={style.video} src={`/${videoNames[currentIndex]}`} controls width="250" height="150" />
+                <button className={style.proximo} onClick={handleNext}>{proximo}</button>
+            </div>
+                <div className={style.container2}>
+                <button className={style.anterior2} onClick={handlePrev}>{anterior}</button>
+                <video className={style.video2} src={`/${videoNames[currentIndex]}`} controls width="600" height="400" />
+                <button className={style.proximo2} onClick={handleNext}>{proximo}</button>
+            </div>
+        </>
     )
 }

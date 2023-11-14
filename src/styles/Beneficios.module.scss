@@ -15,6 +15,11 @@
         padding-bottom: 1rem;
         margin-bottom: 5rem;
         margin-top: 10rem;
+        line-height: 2.5rem;
+
+        span {
+            background-color: $cor-fundo-destaque;
+        }
     }
 
     .item {
@@ -39,7 +44,7 @@
 
 }
 
-@media (max-width: 413px) {
+@media (max-width: $celular) {
 
     .fundo{
         @include container(column, 100%, center, flex-start);
@@ -47,7 +52,7 @@
         margin-left: 0.5rem;
     
         .destaque {
-            @include destaque($fonte-P + 0.1rem);
+            @include destaque($fonte-P + 0.4rem);
             width: 70%;
             text-align: center;
             align-self: center;
@@ -55,6 +60,7 @@
             padding-bottom: 0.3rem;
             margin-bottom: 2rem;
             margin-top: 3rem;
+            line-height: 1.2rem;
         }
     
         .item {

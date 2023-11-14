@@ -4,6 +4,7 @@
 .fundo {
     @include container(row, 100%, space-between, center);
     background-color: $cor-fundo;
+    margin-top: 7rem;
  
     background: radial-gradient(70% 230% at 80% 55.6%, rgba(166, 130, 62, 0.78) 0%, rgba(166, 130, 62, 0.00) 25.52%), #F8F8F8;
 
@@ -39,11 +40,12 @@
     }
 }
 
-@media (max-width: 413px) {
+@media (max-width: $celular) {
 
     .fundo {
         @include container(row, 100%, space-between, center);
         background-color: $cor-fundo;
+        margin-top: 4rem;
      
         background: radial-gradient(70% 230% at 80% 55.6%, rgba(166, 130, 62, 0.78) 0%, rgba(166, 130, 62, 0.00) 25.52%), #F8F8F8;
     

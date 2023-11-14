@@ -1,5 +1,8 @@
 import style from '../../styles/Rodape.module.scss'
 
+function handleClickOlive() {
+    window.location.href = 'https://instagram.com/oliveage_folhas?igshid=MzNseXp6bWdnZTMy';
+}
 
 
 export default function Rodape() {
@@ -8,7 +11,7 @@ export default function Rodape() {
             <div className={style.container}>
                 <div className={style.contato}>
                     <img src="/Instagram.svg" alt="Icone do instagram" />
-                    <p>@oliveage_folhas</p>
+                    <p onClick={handleClickOlive}>@oliveage_folhas</p>
                 </div>
                 <div className={style.contato}>
                     <img src="/Instagram.svg" alt="Icone do instagram" />

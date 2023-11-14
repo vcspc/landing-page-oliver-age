@@ -239,7 +239,7 @@
     }
 }
 
-@media (max-width: 413px) {
+@media (max-width: $celular) {
 
     .fundo {
         @include container(column, 100%, center, center);
@@ -257,13 +257,13 @@
             flex-wrap: wrap;
     
             .quadrante1 {
-                @include container(row, 25rem, space-between, space-between);
+                @include container(row, 100%, space-between, space-between);
                 flex-wrap: wrap;
                 height: 25rem;
     
                 .Q1 {
-                    @include container(column, 11.5rem, none, center);
-                    height: 11.5rem;
+                    @include container(column, 11rem, none, center);
+                    height: 11rem;
                     background-color: $cor-fundo-quadrado1;
     
                     .titulo {
@@ -285,8 +285,8 @@
                 }
     
                 .Q2 {
-                    @include container(column, 11.5rem, none, center);
-                    height: 11.5rem;
+                    @include container(column, 11rem, none, center);
+                    height: 11rem;
                     position: relative;
     
                     .titulo {
@@ -309,8 +309,8 @@
                 }
     
                 .Q3 {
-                    @include container(column, 11.5rem, none, center);
-                    height: 11.5rem;
+                    @include container(column, 11rem, none, center);
+                    height: 11rem;
                     position: relative;
     
                     .titulo {
@@ -333,8 +333,8 @@
                 }
     
                 .Q4 {
-                    @include container(column, 11.5rem, none, center);
-                    height: 11.5rem;
+                    @include container(column, 11rem, none, center);
+                    height: 11rem;
                     background-color: $cor-fundo-quadrado4;
     
                     .titulo {
@@ -356,13 +356,13 @@
             }
     
             .quadrante2 {
-                @include container(row, 25rem, space-between, space-between);
+                @include container(row, 100%, space-between, space-between);
                 flex-wrap: wrap;
                 height: 25rem;
     
                 .Q5 {
-                    @include container(column, 11.5rem, none, center);
-                    height: 11.5rem;
+                    @include container(column, 11rem, none, center);
+                    height: 11rem;
                     background-color: $cor-fundo-quadrado2;
         
                     .titulo {
@@ -370,7 +370,7 @@
                         color: $cor-texto-botao;
                         text-align: center;
                         position: relative;
-                        top: 1rem;
+                        top: 0.5rem;
                     }
         
                     .texto {
@@ -378,15 +378,15 @@
                         color: $cor-texto-botao;
                         text-align: center;
                         position: relative;
-                        top: 1.5rem;
+                        top: 0.9rem;
                         width: 95%;
                     }
     
                 }
     
                 .Q6 {
-                    @include container(column, 11.5rem, none, center);
-                    height: 11.5rem;
+                    @include container(column, 11rem, none, center);
+                    height: 11rem;
                     position: relative;
     
                     .titulo {
@@ -410,8 +410,8 @@
                 }
     
                 .Q7 {
-                    @include container(column, 11.5rem, none, center);
-                    height: 11.5rem;
+                    @include container(column, 11rem, none, center);
+                    height: 11rem;
                     position: relative;
     
                     .titulo {
@@ -434,8 +434,8 @@
                 }
     
                 .Q8 {
-                    @include container(column, 11.5rem, none, center);
-                    height: 11.5rem;
+                    @include container(column, 11rem, none, center);
+                    height: 11rem;
                     background-color: $cor-fundo-quadrado3;
         
                     .titulo {
@@ -443,7 +443,7 @@
                         color: $cor-texto-normal;
                         text-align: center;
                         position: relative;
-                        top: 0.5rem;
+                        top: 0.3rem;
                         width: 95%;
                     }
         
@@ -452,7 +452,234 @@
                         color: $cor-texto-normal;
                         text-align: center;
                         position: relative;
+                        top: 0.7rem;
+                        width: 95%;
+                    }
+                }
+    
+            }
+    
+            
+        }
+    }
+
+}
+
+
+@media (max-width: 390px) {
+
+    .fundo {
+        @include container(column, 100%, center, center);
+        background-color: $cor-fundo;
+        margin-top: 5rem;
+    
+        .titulo {
+            @include titulo($fonte-M + 0.2rem, $espessura-Bold);
+            text-align: center;
+        }
+    
+        .quadrantes {
+            @include container(row, 92%, space-between, center);
+            margin-top: 4rem;
+            flex-wrap: wrap;
+    
+            .quadrante1 {
+                @include container(row, 100%, space-between, space-between);
+                flex-wrap: wrap;
+                height: 24rem;
+    
+                .Q1 {
+                    @include container(column, 10rem, none, center);
+                    height: 10rem;
+                    background-color: $cor-fundo-quadrado1;
+    
+                    .titulo {
+                        @include titulo($fonte-M - 0.1rem, $espessura-Bold);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 1.5rem;
+                        width: 95%;
+                    }
+    
+                    .texto {
+                        @include texto($fonte-M - 0.2rem);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 2.5rem;
+                    }
+                }
+    
+                .Q2 {
+                    @include container(column, 10rem, none, center);
+                    height: 10rem;
+                    position: relative;
+    
+                    .titulo {
+                        @include titulo($fonte-M - 0.1rem, $espessura-Bold);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 2rem;
+                        z-index: 2;
+                    }
+    
+                    .texto {
+                        @include texto($fonte-M - 0.2rem);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 3.5rem;
+                        z-index: 2;
+                    }
+                }
+    
+                .Q3 {
+                    @include container(column, 10rem, none, center);
+                    height: 10rem;
+                    position: relative;
+    
+                    .titulo {
+                        @include titulo($fonte-M - 0.1rem, $espessura-Bold);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 1.7rem;
+                        z-index: 2;
+                    }
+    
+                    .texto {
+                        @include texto($fonte-M - 0.2rem);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 3rem;
+                        z-index: 2;
+                    }   
+                }
+    
+                .Q4 {
+                    @include container(column, 10rem, none, center);
+                    height: 10rem;
+                    background-color: $cor-fundo-quadrado4;
+    
+                    .titulo {
+                        @include titulo($fonte-M - 0.1rem, $espessura-Bold);
+                        color: $cor-texto-normal;
+                        text-align: center;
+                        position: relative;
+                        top: 2rem;
+                    }
+    
+                    .texto {
+                        @include texto($fonte-M - 0.2rem);
+                        color: $cor-texto-normal;
+                        text-align: center;
+                        position: relative;
+                        top: 3.5rem;
+                    }
+                }
+            }
+    
+            .quadrante2 {
+                @include container(row, 100%, space-between, space-between);
+                flex-wrap: wrap;
+                height: 24rem;
+    
+                .Q5 {
+                    @include container(column, 10rem, none, center);
+                    height: 10rem;
+                    background-color: $cor-fundo-quadrado2;
+        
+                    .titulo {
+                        @include titulo($fonte-M - 0.1rem, $espessura-Bold);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 0.5rem;
+                    }
+        
+                    .texto {
+                        @include texto($fonte-M - 0.2rem);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 0.9rem;
+                        width: 95%;
+                    }
+    
+                }
+    
+                .Q6 {
+                    @include container(column, 10rem, none, center);
+                    height: 10rem;
+                    position: relative;
+    
+                    .titulo {
+                        @include titulo($fonte-M - 0.1rem, $espessura-Bold);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
                         top: 1rem;
+                        z-index: 2;
+                        width: 95%;
+                    }
+    
+                    .texto {
+                        @include texto($fonte-M - 0.2rem);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 2rem;
+                        z-index: 2;
+                    }   
+                }
+    
+                .Q7 {
+                    @include container(column, 10rem, none, center);
+                    height: 10rem;
+                    position: relative;
+    
+                    .titulo {
+                        @include titulo($fonte-M - 0.1rem, $espessura-Bold);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 1rem;
+                        z-index: 2;
+                    }
+    
+                    .texto {
+                        @include texto($fonte-M - 0.2rem);
+                        color: $cor-texto-botao;
+                        text-align: center;
+                        position: relative;
+                        top: 2rem;
+                        z-index: 2;
+                    }   
+                }
+    
+                .Q8 {
+                    @include container(column, 10rem, none, center);
+                    height: 10rem;
+                    background-color: $cor-fundo-quadrado3;
+        
+                    .titulo {
+                        @include titulo($fonte-M - 0.1rem, $espessura-Bold);
+                        color: $cor-texto-normal;
+                        text-align: center;
+                        position: relative;
+                        top: 0.3rem;
+                        width: 95%;
+                    }
+        
+                    .texto {
+                        @include texto($fonte-M - 0.2rem);
+                        color: $cor-texto-normal;
+                        text-align: center;
+                        position: relative;
+                        top: 0.7rem;
                         width: 95%;
                     }
                 }

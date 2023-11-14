@@ -82,7 +82,7 @@
     }
 }
 
-@media (max-width: 413px) {
+@media (max-width: $celular) {
 
     .fundo {
         @include container(column, 100%, space-around, center);
