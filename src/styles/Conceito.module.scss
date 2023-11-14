@@ -82,3 +82,134 @@
     }
 
 }
+
+@media (max-width: 347px) {
+
+    .fundo {
+        @include container(row, 100%, space-between, center);
+        background-color: $cor-fundo;
+        margin-top: 4rem;
+     
+        background: radial-gradient(70% 230% at 80% 55.6%, rgba(166, 130, 62, 0.78) 0%, rgba(166, 130, 62, 0.00) 25.52%), #F8F8F8;
+    
+        .container {
+            @include container(column, 60%, space-between, center);
+            height: 7rem;
+            //margin-left: 1rem;
+            
+            
+            .titulo {
+                @include titulo($fonte-M - 0.3rem, $espessura-Bold);
+                text-align: center;
+            }
+    
+            .texto {
+                @include texto($fonte-P + 0.1rem);
+                text-align: center;
+            }
+    
+        }
+    
+        .oliva {
+            width: 40%;
+            height: 10rem;
+            position: relative;
+
+            background-image: url('/oliva.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            
+            
+        }
+    }
+
+}
+
+@media (max-width: 313px) {
+
+    .fundo {
+        @include container(row, 100%, space-between, center);
+        background-color: $cor-fundo;
+        margin-top: 3rem;
+     
+        background: radial-gradient(70% 230% at 80% 55.6%, rgba(166, 130, 62, 0.78) 0%, rgba(166, 130, 62, 0.00) 25.52%), #F8F8F8;
+    
+        .container {
+            @include container(column, 60%, space-between, center);
+            height: 6rem;
+            //margin-left: 1rem;
+            
+            
+            .titulo {
+                @include titulo($fonte-M - 0.4rem, $espessura-Bold);
+                text-align: center;
+            }
+    
+            .texto {
+                @include texto($fonte-P);
+                text-align: center;
+            }
+    
+        }
+    
+        .oliva {
+            width: 40%;
+            height: 9rem;
+            position: relative;
+
+            background-image: url('/oliva.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            
+            
+        }
+    }
+
+}
+
+
+
+@media (max-width: 300px) {
+
+    .fundo {
+        @include container(row, 100%, space-between, center);
+        background-color: $cor-fundo;
+        margin-top: 4rem;
+     
+        background: radial-gradient(70% 230% at 80% 55.6%, rgba(166, 130, 62, 0.78) 0%, rgba(166, 130, 62, 0.00) 25.52%), #F8F8F8;
+    
+        .container {
+            @include container(column, 60%, space-between, center);
+            height: 8rem;
+            //margin-left: 1rem;
+            
+            
+            .titulo {
+                @include titulo($fonte-M - 0.3rem, $espessura-Bold);
+                text-align: center;
+            }
+    
+            .texto {
+                @include texto($fonte-P + 0.1rem);
+                text-align: center;
+            }
+    
+        }
+    
+        .oliva {
+            width: 40%;
+            height: 10rem;
+            position: relative;
+
+            background-image: url('/oliva.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            
+            
+        }
+    }
+
+}

@@ -112,3 +112,162 @@
     }
 
 }
+
+@media (max-width: 347px) {
+
+    .fundo {
+        @include container(row, 100%, space-between, center);
+        background-color: $cor-fundo-cabecalho;
+    
+        .container {
+            @include container(column, 50%, space-between, flex-start);
+            height: 5rem;
+            align-self: flex-start;
+            margin-left: 1rem;
+    
+            .logo1 {
+                width: 90%;
+                height: 3rem;
+                position: relative;
+
+                background-image: url('/logo.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+    
+            .texto {
+                @include titulo ($fonte-M - 0.2rem, $espessura-Regular);
+                
+            }
+        
+        }
+    
+        .produtos1{
+            width: 11rem;
+            height: 6.5rem;
+            position: absolute;
+            left: 5rem;
+            top: 6rem;
+            z-index: 2;
+        }
+    
+        .idosos1 {
+            width: 45%;
+            height: 10rem;
+            position: relative;
+            z-index: 1;
+            align-self: flex-start;
+            //align-self: flex-end;
+            //justify-self: flex-end;
+        }
+    
+    }
+
+}
+
+@media (max-width: 313px) {
+
+    .fundo {
+        @include container(row, 100%, space-between, center);
+        background-color: $cor-fundo-cabecalho;
+    
+        .container {
+            @include container(column, 50%, space-between, flex-start);
+            height: 4rem;
+            align-self: flex-start;
+            margin-left: 1rem;
+    
+            .logo1 {
+                width: 90%;
+                height: 3rem;
+                position: relative;
+
+                background-image: url('/logo.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+    
+            .texto {
+                @include titulo ($fonte-M - 0.3rem, $espessura-Regular);
+                
+            }
+        
+        }
+    
+        .produtos1{
+            width: 10rem;
+            height: 6rem;
+            position: absolute;
+            left: 4rem;
+            top: 5rem;
+            z-index: 2;
+        }
+    
+        .idosos1 {
+            width: 45%;
+            height: 9rem;
+            position: relative;
+            z-index: 1;
+            align-self: flex-start;
+            //align-self: flex-end;
+            //justify-self: flex-end;
+        }
+    
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .fundo {
+        @include container(row, 100%, space-between, center);
+        background-color: $cor-fundo-cabecalho;
+    
+        .container {
+            @include container(column, 50%, space-between, flex-start);
+            height: 4rem;
+            align-self: flex-start;
+            margin-left: 1rem;
+    
+            .logo1 {
+                width: 90%;
+                height: 3rem;
+                position: relative;
+
+                background-image: url('/logo.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+    
+            .texto {
+                @include titulo ($fonte-P + 0.2rem, $espessura-Regular);
+                
+            }
+        
+        }
+    
+        .produtos1{
+            width: 10rem;
+            height: 6rem;
+            position: absolute;
+            left: 3.8rem;
+            top: 4.8rem;
+            z-index: 2;
+        }
+    
+        .idosos1 {
+            width: 45%;
+            height: 8.5rem;
+            position: relative;
+            z-index: 1;
+            align-self: flex-start;
+            //align-self: flex-end;
+            //justify-self: flex-end;
+        }
+    
+    }
+
+}
