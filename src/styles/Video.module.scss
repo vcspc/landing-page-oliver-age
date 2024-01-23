@@ -1,0 +1,117 @@
+@import 'variaveis';
+@import 'mixins';
+
+.container {
+    
+
+    @include container(column, 100%, center, center);
+    background-color: $cor-fundo;
+    /* margin-left: 2rem; */
+
+
+    .video {
+        
+        margin-top: 9rem;
+        background: #D9D9D9;
+        box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.09), -2px 14px 14px 0px rgba(0, 0, 0, 0.08), -5px 32px 19px 0px rgba(0, 0, 0, 0.05), -9px 56px 23px 0px rgba(0, 0, 0, 0.01), -15px 88px 25px 0px rgba(0, 0, 0, 0.00);
+
+    }
+
+    .botao {
+        
+        @include botao(17rem, 6rem, $fonte-G, $espessura-Bold);
+        align-self: center;
+        margin-top: 5rem;
+
+    }
+
+}
+
+@media (max-width: $celular) {
+    
+    .container {
+       
+        @include container(column, 100%, center, center);
+        background-color: $cor-fundo;
+        /* margin-left: 2rem; */
+
+
+        .video {
+            
+            width: 20rem;
+            margin-top: 5rem;
+            background: #D9D9D9;
+            box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.09), -2px 14px 14px 0px rgba(0, 0, 0, 0.08), -5px 32px 19px 0px rgba(0, 0, 0, 0.05), -9px 56px 23px 0px rgba(0, 0, 0, 0.01), -15px 88px 25px 0px rgba(0, 0, 0, 0.00);
+
+        }
+
+        .botao {
+            
+            @include botao(12rem, 4rem, $fonte-M, $espessura-Bold);
+            align-self: center;
+            margin-top: 3rem;
+
+        }
+
+    }
+}
+
+@media (max-width: 347px) {
+    
+    .container {
+       
+        @include container(column, 100%, center, center);
+        background-color: $cor-fundo;
+        /* margin-left: 2rem; */
+
+
+        .video {
+            
+            width: 15rem;
+            margin-top: 4rem;
+            background: #D9D9D9;
+            box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.09), -2px 14px 14px 0px rgba(0, 0, 0, 0.08), -5px 32px 19px 0px rgba(0, 0, 0, 0.05), -9px 56px 23px 0px rgba(0, 0, 0, 0.01), -15px 88px 25px 0px rgba(0, 0, 0, 0.00);
+
+        }
+
+        .botao {
+            
+            @include botao(9rem, 3rem, 0.8rem, $espessura-Bold);
+            align-self: center;
+            margin-top: 2rem;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 300px) {
+    
+    .container {
+       
+        @include container(column, 100%, center, center);
+        background-color: $cor-fundo;
+        /* margin-left: 2rem; */
+
+
+        .video {
+            
+            width: 13rem;
+            margin-top: 4rem;
+            background: #D9D9D9;
+            box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.09), -2px 14px 14px 0px rgba(0, 0, 0, 0.08), -5px 32px 19px 0px rgba(0, 0, 0, 0.05), -9px 56px 23px 0px rgba(0, 0, 0, 0.01), -15px 88px 25px 0px rgba(0, 0, 0, 0.00);
+
+        }
+
+        .botao {
+            
+            @include botao(8rem, 2rem, 0.6rem, $espessura-Bold);
+            align-self: center;
+            margin-top: 2rem;
+
+        }
+
+    }
+
+}

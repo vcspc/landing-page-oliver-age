@@ -11,7 +11,7 @@
     }
 
     .quadrantes {
-        @include container(row, 92%, space-between, center);
+        @include container(row, 80%, space-between, center);
         margin-top: 4rem;
         flex-wrap: wrap;
 
