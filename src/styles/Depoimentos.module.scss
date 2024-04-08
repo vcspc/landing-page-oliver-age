@@ -1,157 +1,159 @@
-@import 'variaveis';
-@import 'mixins';
+@import "variaveis";
+@import "mixins";
 
 .fundo {
-    @include container(column, 100%, center, center);
-    background-color: $cor-fundo;
-    margin-bottom: 10rem;
+  @include container(column, 100%, center, center);
+  background-color: $cor-fundo;
+  margin-bottom: 10rem;
 
-    .titulo {
-        @include titulo($fonte-GG, $espessura-Bold);
-        text-align: center;
-        margin-top: 7rem;
-        margin-bottom: 7rem;
+  .titulo {
+    @include titulo($fonte-GG, $espessura-Bold);
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .container {
+    @include container(column, 100%, space-between, center);
+    display: flex;
+    height: 180rem;
+    margin-top: 2rem;
+
+    .video {
+      width: 45rem;
+      //border: 1px solid #C5C4AC;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
+        0px 5px 5px 0px rgba(0, 0, 0, 0.13),
+        0px 11px 7px 0px rgba(0, 0, 0, 0.08),
+        0px 19px 8px 0px rgba(0, 0, 0, 0.02), 0px 30px 9px 0px rgba(0, 0, 0, 0);
     }
-
-    .container {
-        @include container(column, 100%, space-between, center);
-        display: flex;
-        height: 85rem;
-        margin-top: 2rem;
-
-        .video {
-            width: 45rem;
-            //border: 1px solid #C5C4AC;
-            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 5px 5px 0px rgba(0, 0, 0, 0.13), 0px 11px 7px 0px rgba(0, 0, 0, 0.08), 0px 19px 8px 0px rgba(0, 0, 0, 0.02), 0px 30px 9px 0px rgba(0, 0, 0, 0.00);
-        }
-
-    }
+  }
 }
 
 @media (max-width: $celular) {
+  .fundo {
+    @include container(column, 100%, center, center);
+    background-color: $cor-fundo;
+    margin-bottom: 2rem;
 
-    .fundo {
-        @include container(column, 100%, center, center);
-        background-color: $cor-fundo;
-        margin-bottom: 2rem;
-
-    
-        .titulo {
-            @include titulo($fonte-M, $espessura-Bold);
-            text-align: center;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .container {
-            @include container(column, 100%, space-between, center);
-            display: flex;
-            height: 37rem;
-            margin-top: 2rem;
-    
-            .video {
-                width: 20rem;
-                //border: 1px solid #C5C4AC;
-                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 5px 5px 0px rgba(0, 0, 0, 0.13), 0px 11px 7px 0px rgba(0, 0, 0, 0.08), 0px 19px 8px 0px rgba(0, 0, 0, 0.02), 0px 30px 9px 0px rgba(0, 0, 0, 0.00);
-            }
-    
-        }
+    .titulo {
+      @include titulo($fonte-M, $espessura-Bold);
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
 
+    .container {
+      @include container(column, 100%, space-between, center);
+      display: flex;
+      height: 80rem;
+      margin-top: 2rem;
+
+      .video {
+        width: 20rem;
+        //border: 1px solid #C5C4AC;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
+          0px 5px 5px 0px rgba(0, 0, 0, 0.13),
+          0px 11px 7px 0px rgba(0, 0, 0, 0.08),
+          0px 19px 8px 0px rgba(0, 0, 0, 0.02),
+          0px 30px 9px 0px rgba(0, 0, 0, 0);
+      }
+    }
+  }
 }
 
 @media (max-width: 347px) {
+  .fundo {
+    @include container(column, 100%, center, center);
+    background-color: $cor-fundo;
+    margin-bottom: 2rem;
 
-    .fundo {
-        @include container(column, 100%, center, center);
-        background-color: $cor-fundo;
-        margin-bottom: 2rem;
-
-    
-        .titulo {
-            @include titulo($fonte-M, $espessura-Bold);
-            text-align: center;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .container {
-            @include container(column, 100%, space-between, center);
-            display: flex;
-            height: 35rem;
-            margin-top: 2rem;
-    
-            .video {
-                width: 18rem;
-                //border: 1px solid #C5C4AC;
-                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 5px 5px 0px rgba(0, 0, 0, 0.13), 0px 11px 7px 0px rgba(0, 0, 0, 0.08), 0px 19px 8px 0px rgba(0, 0, 0, 0.02), 0px 30px 9px 0px rgba(0, 0, 0, 0.00);
-            }
-    
-        }
+    .titulo {
+      @include titulo($fonte-M, $espessura-Bold);
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
 
+    .container {
+      @include container(column, 100%, space-between, center);
+      display: flex;
+      height: 70rem;
+      margin-top: 2rem;
+
+      .video {
+        width: 18rem;
+        //border: 1px solid #C5C4AC;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
+          0px 5px 5px 0px rgba(0, 0, 0, 0.13),
+          0px 11px 7px 0px rgba(0, 0, 0, 0.08),
+          0px 19px 8px 0px rgba(0, 0, 0, 0.02),
+          0px 30px 9px 0px rgba(0, 0, 0, 0);
+      }
+    }
+  }
 }
 
 @media (max-width: 313px) {
+  .fundo {
+    @include container(column, 100%, center, center);
+    background-color: $cor-fundo;
+    margin-bottom: 2rem;
 
-    .fundo {
-        @include container(column, 100%, center, center);
-        background-color: $cor-fundo;
-        margin-bottom: 2rem;
-
-    
-        .titulo {
-            @include titulo($fonte-M, $espessura-Bold);
-            text-align: center;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .container {
-            @include container(column, 100%, space-between, center);
-            display: flex;
-            height: 32rem;
-            margin-top: 2rem;
-    
-            .video {
-                width: 16rem;
-                //border: 1px solid #C5C4AC;
-                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 5px 5px 0px rgba(0, 0, 0, 0.13), 0px 11px 7px 0px rgba(0, 0, 0, 0.08), 0px 19px 8px 0px rgba(0, 0, 0, 0.02), 0px 30px 9px 0px rgba(0, 0, 0, 0.00);
-            }
-    
-        }
+    .titulo {
+      @include titulo($fonte-M, $espessura-Bold);
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
 
+    .container {
+      @include container(column, 100%, space-between, center);
+      display: flex;
+      height: 60rem;
+      margin-top: 2rem;
+
+      .video {
+        width: 16rem;
+        //border: 1px solid #C5C4AC;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
+          0px 5px 5px 0px rgba(0, 0, 0, 0.13),
+          0px 11px 7px 0px rgba(0, 0, 0, 0.08),
+          0px 19px 8px 0px rgba(0, 0, 0, 0.02),
+          0px 30px 9px 0px rgba(0, 0, 0, 0);
+      }
+    }
+  }
 }
 
 @media (max-width: 300px) {
+  .fundo {
+    @include container(column, 100%, center, center);
+    background-color: $cor-fundo;
+    margin-bottom: 2rem;
 
-    .fundo {
-        @include container(column, 100%, center, center);
-        background-color: $cor-fundo;
-        margin-bottom: 2rem;
-
-    
-        .titulo {
-            @include titulo($fonte-M, $espessura-Bold);
-            text-align: center;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .container {
-            @include container(column, 100%, space-between, center);
-            display: flex;
-            height: 30rem;
-            margin-top: 2rem;
-    
-            .video {
-                width: 15rem;
-                //border: 1px solid #C5C4AC;
-                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 5px 5px 0px rgba(0, 0, 0, 0.13), 0px 11px 7px 0px rgba(0, 0, 0, 0.08), 0px 19px 8px 0px rgba(0, 0, 0, 0.02), 0px 30px 9px 0px rgba(0, 0, 0, 0.00);
-            }
-    
-        }
+    .titulo {
+      @include titulo($fonte-M, $espessura-Bold);
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
 
+    .container {
+      @include container(column, 100%, space-between, center);
+      display: flex;
+      height: 60rem;
+      margin-top: 2rem;
+
+      .video {
+        width: 15rem;
+        //border: 1px solid #C5C4AC;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
+          0px 5px 5px 0px rgba(0, 0, 0, 0.13),
+          0px 11px 7px 0px rgba(0, 0, 0, 0.08),
+          0px 19px 8px 0px rgba(0, 0, 0, 0.02),
+          0px 30px 9px 0px rgba(0, 0, 0, 0);
+      }
+    }
+  }
 }
