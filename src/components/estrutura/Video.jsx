@@ -92,10 +92,6 @@ export default function Video() {
         }
     }, []); // Executa apenas uma vez, quando o componente é montado
 
-    const handleClick = () => {
-        // Lógica para o botão "ADQUIRA AGORA"
-        // ...
-    };
 
     return (
         <div className={style.container}>
